@@ -14,13 +14,14 @@ pipeline {
             steps {
                 echo "Build du projet"
 
-                // Ajoutez les commandes de build ici
             }
         }
         stage('Deploy') {
             steps {
                 echo "Déploiement du projet"
                 // Ajoutez les commandes de déploiement ici
+
+                sh "command_to_deploy_project"
             }
         }
     }
